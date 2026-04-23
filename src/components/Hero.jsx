@@ -1,7 +1,7 @@
 import React from 'react';
 import { Download, CodeXml } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import heroImg from '../assets/anu_profile.jpg';
+import heroImg from '../assets/dhyan_profile.jpeg';
 import { portfolioData } from '../data/portfolioData';
 import './Hero.css';
 
@@ -24,11 +24,11 @@ const Hero = () => {
           </h1>
           
           <p className="hero-description">
-            A <strong>Frontend Developer & MERN Stack Dev</strong> focused on high-performance digital experiences— where minimalism meets engineering excellence.
+            A <strong>{portfolioData.title}</strong> focused on high-performance digital experiences— where minimalism meets engineering excellence.
           </p>
           
           <div className="hero-actions">
-            <a href="/resume.pdf" download="Anuchandana_Resume.pdf" className="btn btn-primary dwn-btn">
+            <a href="/resume.pdf" download="Dhyan_Resume.pdf" className="btn btn-primary dwn-btn">
               DOWNLOAD CV <Download size={16} />
             </a>
             
