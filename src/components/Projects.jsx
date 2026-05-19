@@ -89,9 +89,14 @@ const Projects = () => {
                   )}
                   
                   <div className="modal-actions mt-4">
+                    {selectedProject.live && (
+                       <a href={selectedProject.live} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginRight: '10px' }}>
+                         <FaExternalLinkAlt style={{ marginRight: '5px' }} /> Live Preview
+                       </a>
+                    )}
                     {selectedProject.github && selectedProject.github !== "#" && (
                        <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                         <FaGithub /> Source Code
+                         <FaGithub style={{ marginRight: '5px' }} /> Source Code
                        </a>
                     )}
                   </div>
