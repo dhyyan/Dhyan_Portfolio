@@ -1,6 +1,6 @@
 import workoraImg from '../assets/projects/workora.png';
 import rexpexImg from '../assets/projects/rexpex.png';
-import adminImg from '../assets/projects/admin.png';
+import adminImg from '../assets/projects/admin.png'                                          
 import olxImg from '../assets/projects/olx.png';
 import netflixImg from '../assets/projects/netflix.png';
 
@@ -27,15 +27,16 @@ export const portfolioData = {
   projects: [
     {
       title: "Workora – Freelance Marketplace Platform",
+      live: "https://workora.dhyan.online/",
       github: "https://github.com/dhyyan/WORKORA",
       image: workoraImg,
-      description: "A full stack freelance marketplace platform where clients can post projects and hire freelancers based on skills, budget, and ratings. Freelancers can apply for jobs, manage bids, track progress, and receive payments securely through an integrated wallet system.",
+      description: "A full stack freelance marketplace platform where clients can post projects and hire freelancers. Features an escrow payment system for secure milestone-based transactions, contract-based chat, and a robust dispute resolution mechanism.",
       bulletPoints: [
-        "Role-Based Authentication: Secure login and access control for Admin, Client, and Freelancer roles with JWT and OTP verification.",
-        "Job Posting & Bidding System: Clients can post jobs with deadlines and budgets; freelancers can submit proposals and track their status.",
-        "Wallet-Based Payment Flow: Clients and freelancers have individual wallets. Clients can add funds, and upon project completion, release payments directly to freelancers.",
-        "Real-Time Chat Notifications: Instant communication and updates between clients and freelancers using WebSocket-based chat.",
-        "Admin Dashboard: Manage users, subscriptions, payments, and monitor project activities with analytics and reports."
+        "Job Posting & Bidding: Clients post jobs, multiple freelancers bid. Accepting a bid creates a contract, which unlocks communication channels to prevent spam.",
+        "Escrow Payment System: Clients fund milestones which are securely held by Admin in an Escrow account, rather than directly sent to the freelancer's wallet.",
+        "Milestone Workflow: Freelancers submit completed work. Clients can request revisions or approve to release the milestone payment, which is then credited to the freelancer's wallet upon Admin approval.",
+        "Dispute Resolution: Integrated a concern-raising schema where freelancers can raise disputes. The Admin intervenes to contact both parties and accurately disburse payments.",
+        "Role-Based Access & Admin Dashboard: Secure login for Admin, Client, and Freelancer. Admin manages users, payments, and oversees escrow transactions and project activities."
       ]
     },
     {
